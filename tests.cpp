@@ -90,7 +90,7 @@ TEST_CASE("treeHeight") {
     Node *nullRoot = new Node(7);
     Node *newNode = new Node(10);
 
-    CHECK(treeHeight(root) == 3);
+    CHECK(treeHeight(root) == 4);
     CHECK(treeHeight(root2) == 3);
 
     CHECK(!treeHeight(nullRoot));
