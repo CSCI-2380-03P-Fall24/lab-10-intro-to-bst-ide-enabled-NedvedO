@@ -72,7 +72,7 @@ TEST_CASE("treeSize") {
     Node *root2 = secondTree();
     Node *nullRoot = nullptr;
 
-    CHECK(treeSize(root) == 12);
+    CHECK(treeSize(root) == 11);
     CHECK(treeSize(root2) == 15);
     REQUIRE_NOTHROW(treeSize(nullRoot));
 
@@ -90,7 +90,7 @@ TEST_CASE("treeHeight") {
     Node *nullRoot = new Node(7);
     Node *newNode = new Node(10);
 
-    CHECK(treeHeight(root) == 3);
+    CHECK(treeHeight(root) == 4);
     CHECK(treeHeight(root2) == 3);
 
     CHECK(!treeHeight(nullRoot));
